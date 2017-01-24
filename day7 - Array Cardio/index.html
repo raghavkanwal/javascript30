@@ -29,11 +29,20 @@
     // Array.prototype.every() // is everyone 19 or older?
 
     console.log("Checking if anyone was born in 1970");
-    var bornIn1970 = people.some( function(elem) {
+    var anyBornIn1970 = people.some( function(elem) {
       return elem.year === 1970;
     });
 
-    console.log({bornIn1970});
+    console.log({anyBornIn1970});
+
+    console.log("Checking if everyone was born in 1970");
+    var allBornIn1970 = people.every( function(elem) {
+      return elem.year === 1970;
+    });
+
+    console.log({allBornIn1970});
+
+
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
