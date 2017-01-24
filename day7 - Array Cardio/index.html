@@ -28,6 +28,13 @@
     // Array.prototype.some() // is at least one person 19 or older?
     // Array.prototype.every() // is everyone 19 or older?
 
+    console.log("Checking if anyone was born in 1970");
+    var bornIn1970 = people.some( function(elem) {
+      return elem.year === 1970;
+    });
+
+    console.log({bornIn1970});
+
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
